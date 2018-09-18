@@ -1,0 +1,12 @@
+@media  (max-width: 426px) {
+	.header-text h1{
+		font-size: 40px;
+	}
+}
+
+@media  (max-width: 376px) {
+
+	.header-text button{
+		font-size: 25px;
+	}
+}
