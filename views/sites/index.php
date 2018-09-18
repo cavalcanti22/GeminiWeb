@@ -294,21 +294,21 @@
    <iframe class="map" style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6444482082!2d-48.47136331994401!3d-27.604550782918665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273eb75472c263:0x185bcd8c811f3fd1!2sAv.+Afonso+Delambert+Neto,+540+-+Lagoa+da+Concei%C3%A7%C3%A3o,+Florian%C3%B3polis+-+SC!5e0!3m2!1spt-BR!2sbr!4v1501431398015" scrolling="no" allowfullscreen></iframe>
  </div>
 
- <div class="col-md-12 col-sm-12 contact-form wow fadeIn" data-wow-delay="0.9s">
-  <form  class="contact-form" name="contato" id="contato" method="POST">
+ <!-- <div class="col-md-12 col-sm-12 contact-form wow fadeIn" data-wow-delay="0.9s">
+  <form  class="contact-form" name="contato" id="contato" method="POST"> -->
    <!-- <input type="text" class="form-control" name="contact_name" placeholder="Nome" required> -->
-   <input type="text" name="nomeremetente" class="form-control" required placeholder="Nome*" required>
+   <!-- <input type="text" name="nomeremetente" class="form-control" required placeholder="Nome*" required> -->
    <!-- <input type="email" class="form-control" name="contact_email" placeholder="E-mail" required> -->
-   <input type="email" name="emailremetente" class="form-control" required placeholder="Email*" required>
+  <!--  <input type="email" name="emailremetente" class="form-control" required placeholder="Email*" required>
 
    <textarea class="form-control" id="contact-message" name="mensagem" placeholder="Escreva a sua mensagem" required></textarea>
    <div class="contact-btn-wrapper">
     <button class="btn-default button-reset" type="reset">Reset</button>
     <button name="Submit" class="btn-default button-send" type="submit">Enviar</button>
- 
+    
   </div>
 </form>
-</div>
+</div> -->
 <!--col-md-12-->
 </div>
 <!--row-->
