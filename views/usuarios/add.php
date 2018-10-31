@@ -22,4 +22,17 @@
 
   <button type="submit" class="btn btn-primary">Cadastrar</button>
   <a href="<?=site_url()?>usuarios"> << Retornar</a>
+
+  <div class="form-group">
+<?php
+
+if (isset($_SESSION['feedback']) && $_SESSION['feedback']) {
+  echo $_SESSION['feedback'];
+}
+
+unset($_SESSION['feedback']);
+
+?>
+  </div>
 </form>
+

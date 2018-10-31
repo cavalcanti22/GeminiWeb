@@ -26,20 +26,29 @@ class Usuarios
 
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-			if ($_POST['senha'] === $_POST['rsenha']) {
-				
-				$u['nome'] = $_POST['nome'];
-				$u['email'] = $_POST['email'];
-				$u['senha'] = md5($_POST['senha']);
-				if (!$this->usuario->insert_usuario($u)) {
-					die("ERRO AO ADICIONAR");
-				}
-				else{
+			if ($_POST['senha'] === $_POST['rsenha'] ) {
 
-					$_SESSION['feedback'] = "<h6 class='alert alert-success' role='alert'>USUÁRIO ADICIONADO!</h6>";
+				if ($_POST['nome'] !== '' AND $_POST['email'] !== '' AND $_POST['senha'] !=='') {
+
+					$u['nome'] = $_POST['nome'];
+					$u['email'] = $_POST['email'];
+					$u['senha'] = md5($_POST['senha']);
+					
+					if (!$this->usuario->insert_usuario($u)) {
+						die("ERRO AO ADICIONAR");
+					}
+					else{
+
+						$_SESSION['feedback'] = "<h6 class='alert alert-success' role='alert'>USUÁRIO ADICIONADO!</h6>";
+					}
+
+					$data = $this->index();
 				}
 
-				$data = $this->index();
+				else {
+					die('PREENCHA TODOS OS CAMPOS!');
+				}
+
 			}
 			else{
 

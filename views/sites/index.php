@@ -198,7 +198,7 @@
 <div class="portfolio-wrapper wow fadeIn" data-wow-delay="0.5s">
   <div class="row">
     <?php foreach ($devimagens as $i): ?>
-      <div class="col-md-2 col-sm-4 col-xs-6 mix theme develop">
+      <div class="col-md-3 col-sm-4 col-xs-6 mix theme develop">
         <div class="single-work">
          <a href="<?=$i['link']?>"  target="_blank">
           <img   src="<?=site_url().$i['imagem']?>" alt="" style="width: 60%;" class="center-block">

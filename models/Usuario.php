@@ -3,8 +3,8 @@ class Usuario extends Model
 {
 
 	public function get_all_usuarios(){
-	$q = "SELECT * FROM usuarios";
-	return $this->execute($q);
+		$q = "SELECT * FROM usuarios";
+		return $this->execute($q);
 	}
 
 	public function insert_usuario($u){
@@ -34,6 +34,17 @@ class Usuario extends Model
 		return $this->execute($q);
 
 
+	}
+
+	public function confere_user($u){
+
+		$nome = $u['nome'];
+		$email = $u['email'];
+		$senha = $u['senha'];
+
+	$q = "SELECT * FROM usuarios WHERE email = '".$email."' OR cpf = '".$nome."'";
+		
+		return $this->execute($q);
 	}
 
 	public function delete_usuario($id){
