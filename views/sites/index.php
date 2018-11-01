@@ -181,7 +181,7 @@
   <!--col-md-12-->
 </div>
 <!--row-->
-<div class="row filter-button-wrapper">
+<!-- <div class="row filter-button-wrapper">
  <div class="col-md-12 col-sm-12">
   <div class="button-group filter-button-group">
    <ul>
@@ -191,7 +191,7 @@
     <li class="filter" data-filter=".theme">Wordpress Theme</li>
   </ul>
 </div>
-</div>
+</div> -->
 <!--col-md-12-->
 </div>
 <!--row-->

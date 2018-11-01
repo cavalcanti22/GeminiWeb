@@ -93,7 +93,7 @@ class Imagens extends Ext
 					
 					if (($_FILES['imagem']['type'] == 'image/jpeg' OR $_FILES['imagem']['type'] == 'image/png' ) AND $_FILES['imagem']['size'] <= 2000000 )
 					{
-						$caminho = "resources/site/images/services/";
+						$caminho = "resources/site/images/";
 						$uniqid = md5(uniqid(rand(), true));
 	    				$nome = $this->nome_ext($uniqid,'imagem');
 						$arquivo = $caminho . $nome;
